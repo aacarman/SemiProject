@@ -13119,7 +13119,6 @@ div#notebook {
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>^---- Click Me!</p>
 <h1 id="Semiconductor-Material-Characterization"><strong>Semiconductor Material Characterization</strong><a class="anchor-link" href="#Semiconductor-Material-Characterization">&#182;</a></h1><p>Authors:</p>
 <ul>
 <li>Aaron Carman</li>
@@ -13267,8 +13266,9 @@ div#notebook {
 <span class="n">crit_E</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatText</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="mf">3.6e6</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Critical Electric Field&#39;</span><span class="p">)</span>
 
 <span class="n">ui</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">GridBox</span><span class="p">([</span><span class="n">eps</span><span class="p">,</span><span class="n">kelvin</span><span class="p">,</span><span class="n">Ni</span><span class="p">,</span><span class="n">crit_E</span><span class="p">,</span><span class="n">Me</span><span class="p">,</span><span class="n">Mh</span><span class="p">,</span><span class="n">Nc</span><span class="p">,</span><span class="n">Nv</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">grid_template_columns</span><span class="o">=</span><span class="s2">&quot;repeat(2, 400px)&quot;</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">ui</span><span class="p">)</span>
 <span class="n">out</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">interactive_output</span><span class="p">(</span><span class="n">mainSection</span><span class="p">,</span>  <span class="p">{</span><span class="s1">&#39;dielectric_constant&#39;</span><span class="p">:</span><span class="n">eps</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">:</span><span class="n">kelvin</span><span class="p">,</span> <span class="s1">&#39;crit_E&#39;</span><span class="p">:</span><span class="n">crit_E</span><span class="p">,</span> <span class="s1">&#39;Me&#39;</span><span class="p">:</span><span class="n">Me</span><span class="p">,</span> <span class="s1">&#39;Mh&#39;</span><span class="p">:</span><span class="n">Mh</span><span class="p">,</span> <span class="s1">&#39;Nc&#39;</span><span class="p">:</span><span class="n">Nc</span><span class="p">,</span> <span class="s1">&#39;Nv&#39;</span><span class="p">:</span><span class="n">Nv</span><span class="p">,</span> <span class="s1">&#39;Ni&#39;</span><span class="p">:</span><span class="n">Ni</span><span class="p">})</span>
-<span class="n">display</span><span class="p">(</span><span class="n">ui</span><span class="p">,</span> <span class="n">out</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
 </pre></div>
 
     </div>
