@@ -13119,27 +13119,18 @@ div#notebook {
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Semiconductor Project</p>
-<p>Authors:</p>
+<p>^---- Click Me!</p>
+<h1 id="Semiconductor-Material-Characterization"><strong>Semiconductor Material Characterization</strong><a class="anchor-link" href="#Semiconductor-Material-Characterization">&#182;</a></h1><p>Authors:</p>
 <ul>
 <li>Aaron Carman</li>
 <li>Zachary Coon</li>
 <li>Clifton Dey</li>
 </ul>
-<p>What does this shit do besides ruin underwear? We're not quite sure.
-Clif I swear to God if you add more parentheses.</p>
+<p>Takes several material properties as inputs, and outputs 2D plots showing the effects on breakdown voltage, forward voltage, intrinsic field, and depeltion width.</p>
 <p>TODO:</p>
 <ol>
-<li>A lot</li>
+<li>Add support for dropdown menu to automatically populate cells with common material properties.</li>
 </ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="nbi:hide_in">nbi:hide_in<a class="anchor-link" href="#nbi:hide_in">&#182;</a></h1><p>Imports, Graph Properties, and Fundamental Constants</p>
-<p>Doesn't do anything very interesting. Refer to comments.</p>
 
 </div>
 </div>
@@ -13179,14 +13170,6 @@ Clif I swear to God if you add more parentheses.</p>
 </div>
 
   </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Material Properties</p>
-<p>These are all the material properties that we need (and some that we don't currently need, but somehow I still hold out faith that there's a point to them). In the future, what we would like to do is have numerous materials stored somewhere that we can pull from. Maybe querying a database like NSM, or just manually entering in the properties in an Excel file or multiple files. Who knows.</p>
-
-</div>
-</div>
-</div>
 
   
 
@@ -13268,15 +13251,12 @@ Clif I swear to God if you add more parentheses.</p>
 
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="n">Nv</span><span class="p">)</span>
-
 <span class="n">Me</span> <span class="o">=</span> <span class="mf">0.18</span>           <span class="c1"># effective mass of electron (it&#39;s not used anywhere Clif wtf)</span>
 <span class="n">Mh</span> <span class="o">=</span> <span class="mi">1</span>              <span class="c1"># effective mass of hole (not used)</span>
 <span class="n">Nc</span> <span class="o">=</span> <span class="mf">1.2e18</span>         <span class="c1"># effective DOS of conductance band (not used)</span>
 <span class="n">Nv</span> <span class="o">=</span> <span class="mf">4.6e19</span>         <span class="c1"># effective DOS of valence band (not used)</span>
 <span class="n">Ni</span> <span class="o">=</span> <span class="mf">1e-10</span>          <span class="c1"># intrinsic carrier concentration</span>
 
-<span class="n">grid</span> <span class="o">=</span> <span class="n">GridspecLayout</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">eps</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatText</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="mf">8.9</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Dielectric Constant&#39;</span><span class="p">)</span>
 <span class="n">kelvin</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatText</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="mi">300</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Temp in K&#39;</span><span class="p">)</span>
 <span class="n">Me</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatText</span><span class="p">(</span><span class="n">value</span> <span class="o">=</span> <span class="mf">0.18</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Electron Effective Mass&#39;</span><span class="p">)</span>
